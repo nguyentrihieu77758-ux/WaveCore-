@@ -1,2 +1,1 @@
-# WaveCore-
-Cheat 1.21
+# WaveCore
