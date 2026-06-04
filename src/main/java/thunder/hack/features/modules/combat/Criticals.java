@@ -34,7 +34,7 @@ public final class Criticals extends Module {
     public void doCrit() {
         if (isDisabled() || mc.player == null || mc.world == null)
             return;
-        if ((mc.player.isOnGround() || mc.player.getAbilities().flying || mode.is(Mode.Grim)) && !mc.player.isInLava() && !mc.player.isSubmergedInWater()) {
+        if ((!mc.player.isInLava() && !mc.player.isSubmergedInWater())) {
             switch (mode.getValue()) {
                 case OldNCP -> {
                     critPacket(0.00001058293536, false);
